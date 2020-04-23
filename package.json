@@ -1,0 +1,71 @@
+{
+  "name": "vehicle-entity-loader",
+  "description": "load vehicle entity data from a csv into a supported db",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": ">= 13.13.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "test": "yarn run lint && yarn run jest",
+    "lint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "jest": "jest  --forceExit"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ],
+    "ignore": []
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^4.5.1",
+    "@feathersjs/errors": "^4.5.1",
+    "@feathersjs/express": "^4.5.1",
+    "@feathersjs/feathers": "^4.5.1",
+    "@feathersjs/socketio": "^4.5.1",
+    "@feathersjs/transport-commons": "^4.5.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "csv-parse": "^4.8.9",
+    "csv-stringify": "^5.4.3",
+    "faker": "^4.1.0",
+    "feathers-blob": "^2.2.0",
+    "feathers-memory": "^4.1.0",
+    "feathers-sequelize": "^6.1.0",
+    "fs-blob-store": "^5.2.1",
+    "helmet": "^3.21.2",
+    "lodash": "^4.17.15",
+    "multer": "^1.4.2",
+    "sequelize": "^5.21.4",
+    "serve-favicon": "^2.5.0",
+    "sqlite3": "^4.1.1",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^25.4.0",
+    "nodemon": "^2.0.2"
+  }
+}
